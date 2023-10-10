@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Gilroy";
+    box-sizing:border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;  
+    min-height: 100vh;
+}
+#top{
+    width: 100%;
+    min-height: 60vh;
+   background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80);
+   background-size: cover;
+   background-position: 50% 60%;   
+}
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.308) ;
+}
+ #text{
+    align-items: center;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10vw;
+    color: white;   
+}
+#text h1{
+    font-weight: 500 ;
+    font-size: 6vw;
+
+}
+#textright {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    }
+#textright p {
+    font-size: 12px;
+   
+        }
+#textright i{
+    color: white;
+
+}    
+
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;    
+}
+#bone{
+    padding: 10px;
+    width:25%;
+    min-height: inherit;
+    background-color: rgba(218, 221, 27, 0.151);
+}
+#bone p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#btwo{
+    width:25%;
+    min-height: inherit;
+    background-image: url(https://cdn.pixabay.com/photo/2015/03/31/18/47/paraglider-701440_640.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#bthree{
+    width:20%;
+    min-height: inherit;
+    background-color: purple;
+}
+#bthreetop{
+    padding: 20px;
+    width:100%;
+    min-height: 20vh;
+    background-color: rgb(250, 199, 199);
+    color: black;
+    
+}
+#bthreetop p{
+    font-size: 12px;
+  
+}
+#bthreebottom{
+    width:100%;
+    min-height: 20vh;
+    background-image: url(https://media.istockphoto.com/id/158636263/photo/winding-farm-road-through-foggy-landscape.jpg?s=612x612&w=0&k=20&c=rzZDy_rDYV0TbriUXYXAKk_FFrMptT_6txV6ZPkSm5s=);
+    background-position: center;
+    background-size: cover;
+}
+#bfour{
+    width:30%;
+    min-height: inherit;
+    background-color: rgb(20, 1, 1);
+    color: white;
+   
+}
+#bfour h3{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+   
+}
+.notf{
+   
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notf #photo{
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    }
+    .notf p{
+        width: 86%;
+        font: size 12px;;
+    }
+
+    @media(max-width:500px){
+        #overlay #text{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #text h1{
+            font-size: 10vw;
+        }
+        #overlay #text #textright{
+            flex-direction:column;
+            align-items: flex-start;
+
+
+        }
+        #overlay #text #textright p{
+            width:initial;
+            margin-top: 20px;
+
+
+        }
+        #overlay #text #textright #icons{
+           
+            margin-top: 30px;
+
+
+        }
+      #bottom{
+        flex-direction: column;
+
+      }
+        #bone{
+            width: 100%;
+        }
+        #btwo{
+            width: 100%;
+        }
+
+        #bthree{
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #bfour{
+            width: 100%;
+        }
+
+
+    }
+
